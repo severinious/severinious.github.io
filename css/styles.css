@@ -3,60 +3,144 @@
 
 /* Elements */
 header {
-  color:#1F2A33
+  color:#ffffff
 }
 
 body { 
   margin:0px /* Required for nav bar to fill the top part of the page*/
 }
 
+h1 {
+  font-size:3.02vw;
+  margin:0.05rem;
+}
+
+p {
+  font-size: 1.3vw;
+}
+
+/* ----- Classes ----- */
+
 /* Colour Themes */
 
 .accent-theme {
-  background-color: #2A6F97;
+  background-color: #1d5174;
 }
 
 .background-theme {
-  background-color:#A7C7E7;
+  background-color:#d1e8ff;
 }
 
-/* Elements */
+/* Font classes */
+
+.text-small {
+  font-size: 1.04vw; /* 20px */
+}
+
+.text-standard {
+  font-size:1.3vw; /* 25px*/
+}
+
+.header-small {
+  font-size:1.6vw;
+}
 
 
-/* Classes */
+/* ----- Section Styles ----- */
+
+/* Navigation Bar */
+
 .main-header {
+  font-weight: bold;
   margin-right: 30vw
 }
 
-.header-text {
-  font-size:1.82vw; /* Approximately 35PX on 1920-1080 resolution, adapts for smaller resolutions*/
-  justify-content: left;
-}
-
-/* Navigation */
 nav {
   display: flex;
-  height: 10vh;
+  min-height: 10vh;
+  height: auto;
   flex-grow:3;
 }
 
-nav a {
-
+nav a { /* Element used to create hyperlinks */
   text-decoration: none;
-  color: #1F2A33; 
+  color: #ffffff; 
   font-weight: bold;
-  white-space: nowrap; /* Prevent text from overflowing outside of nav bar*/
 }
 
 nav li {
   margin: 1vw;
- 
 }
 
 nav ul { 
   display: flex;
-  list-style-type: none; 
+  flex-wrap: nowrap;
+  overflow: hidden; /* Prevents text from flowing outside of navbar*/
+  list-style-type: none; /* Hides "." beside each item */
   margin: 0;
   padding: 0;
-  font-size: clamp(1rem, 1.82vw, 3rem);
+  font-size: 1.82vw;  /* Approximately 35PX on 1920-1080 resolution, adapts for smaller resolutions*/
 }
+
+/* Footer Bar */
+
+footer {
+  display: flex;
+  
+  /* Ensures bar fits text while not going below a minimum height */
+  min-height: 5vh;
+  height: auto;
+  width:100%;
+  color:white;
+  flex-grow:5;
+}
+
+footer p {
+  margin: 0.2rem;
+}
+
+footer h6 {
+  margin: clamp(0.1rem, 0.4rem, 1rem);  
+}
+
+.footer-main {
+  display: flex; /* Lays out the content in a row */
+  justify-content: center;
+}
+
+.footer-subsection {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+/* Index */
+
+.media-section {
+  display:flex;
+  justify-content:space-between;
+}
+
+.media-section img {
+margin: 1rem 1rem;
+}
+
+.index-info-section {
+  display:flex;
+  justify-content: space-between;
+  margin:1.75rem;
+
+}
+
+.about-subsection {
+
+  text-align:center;
+  margin: 0.1rem 0.2rem;
+}
+
+.contact-subsection {
+  text-align:center;
+  margin: 0.1rem 0.2rem;
+
+
+}
+
