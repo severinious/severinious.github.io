@@ -11,48 +11,13 @@ body {
 }
 
 h1 {
-  font-size:3.02vw;
+  font-size: clamp(2rem, 3.02vw, 60px); /* 58px */
   margin:0.05rem;
 }
 
 p {
-  font-size: 1.3vw;
-}
-
-/* ----- Classes ----- */
-
-/* Colour Themes */
-
-.accent-theme {
-  background-color: #1d5174;
-}
-
-.background-theme {
-  background-color:#d1e8ff;
-}
-
-/* Font classes */
-
-.text-small {
-  font-size: 1.04vw; /* 20px */
-}
-
-.text-standard {
-  font-size:1.3vw; /* 25px*/
-}
-
-.header-small {
-  font-size:1.6vw;
-}
-
-
-/* ----- Section Styles ----- */
-
-/* Navigation Bar */
-
-.main-header {
-  font-weight: bold;
-  margin-right: 30vw
+  font-size: clamp(1rem, 1.3vw, 30px); /* 25px */
+  margin:0.5rem;
 }
 
 nav {
@@ -79,10 +44,9 @@ nav ul {
   list-style-type: none; /* Hides "." beside each item */
   margin: 0;
   padding: 0;
-  font-size: 1.82vw;  /* Approximately 35PX on 1920-1080 resolution, adapts for smaller resolutions*/
+  font-size: clamp(1rem, 1.82vw, 1.82vw);  /* Approximately 35PX on 1920-1080 resolution, adapts for smaller resolutions*/
 }
 
-/* Footer Bar */
 
 footer {
   display: flex;
@@ -99,8 +63,31 @@ footer p {
   margin: 0.2rem;
 }
 
-footer h6 {
-  margin: clamp(0.1rem, 0.4rem, 1rem);  
+/* ----- Classes ----- */
+
+/* Colour Themes */
+
+.accent-theme {
+  background-color: #1d5174;
+}
+
+.background-theme {
+  background-color:#d1e8ff;
+}
+
+/* Font classes */
+
+.text-small {
+  font-size: clamp(1rem, 1.04vw, 2rem); /* 20px */
+}
+
+.header-small {
+  font-size: clamp(1.2rem, 1.6vw, 2rem); 
+}
+
+.main-header {
+  font-weight: bold;
+  margin-right: 30vw
 }
 
 .footer-main {
@@ -113,34 +100,50 @@ footer h6 {
   margin-right: 10rem;
 }
 
+/* ----- Section Classes ----- */
+
+/* Reusable sections */
+
+.text-section {
+  text-align:center;
+  margin: 0.1rem 0.2rem;
+}
+
 /* Index */
 
 .media-section {
-  display:flex;
-  justify-content:space-between;
+    display: flex;
+    gap: 5vw;            /* The space between each item */
+    flex-wrap: wrap;     /* Allows stacking on small screens */
+    justify-content: center;
 }
 
 .media-section img {
-margin: 1rem 1rem;
+  margin-top:2vw;
+  max-width: 50%;    /* Prevent expansion */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .index-info-section {
   display:flex;
-  justify-content: space-between;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  gap:4vw;
   margin:1.75rem;
-
+  
 }
 
-.about-subsection {
 
+/* Contact us */
+
+.contact-page {
+gap:5vw;
+margin-top:2vw;
+}
+
+.contact-form {
   text-align:center;
-  margin: 0.1rem 0.2rem;
+  margin: 1vw;
 }
-
-.contact-subsection {
-  text-align:center;
-  margin: 0.1rem 0.2rem;
-
-
-}
-
