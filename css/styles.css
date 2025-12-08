@@ -11,12 +11,24 @@ body {
 }
 
 h1 {
-  font-size: clamp(2rem, 3.02vw, 60px); /* 58px */
+  font-size: clamp(2rem, 3.02vw, 58px); /* 58px */
   margin:0.05rem;
 }
 
-p {
-  font-size: clamp(1rem, 1.3vw, 30px); /* 25px */
+h2 {
+  font-size: clamp(1.8rem, 2.6vw, 50px);
+  margin:0.05rem;
+  font-weight: lighter;
+}
+
+th {
+  font-size: clamp(1.2rem, 1.88vw, 36px);
+  margin:0.05rem;
+  font-weight: lighter;
+}
+
+p, td {
+  font-size: clamp(1rem, 1.3vw, 25px); /* 25px */
   margin:0.5rem;
 }
 
@@ -63,6 +75,22 @@ footer p {
   margin: 0.2rem;
 }
 
+.btn {
+  display: inline-block;
+  padding: 2vw 5vw;
+  margin: 0.5rem;
+  background-color: #1d5174;
+  color: white;
+  text-decoration: none; /* remove underline */
+  border-radius: 20px;
+  font-weight: bold;
+  font-size:38px;
+}
+
+.btn:hover {
+  background-color: #2d7daf;
+}
+
 /* ----- Classes ----- */
 
 /* Colour Themes */
@@ -85,9 +113,13 @@ footer p {
   font-size: clamp(1.2rem, 1.6vw, 2rem); 
 }
 
-.main-header {
+.sp-nav-header {
   font-weight: bold;
   margin-right: 30vw
+}
+
+.page-header {
+text-align:center;
 }
 
 .footer-main {
@@ -109,7 +141,19 @@ footer p {
   margin: 0.1rem 0.2rem;
 }
 
+.button-container {
+  text-align:center;
+}
+
 /* Index */
+
+.index-info-section {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  gap:4vw;
+  margin:1.75rem;
+}
 
 .media-section {
     display: flex;
@@ -126,16 +170,6 @@ footer p {
   object-fit: cover;
 }
 
-.index-info-section {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content: space-evenly;
-  gap:4vw;
-  margin:1.75rem;
-  
-}
-
-
 /* Contact us */
 
 .contact-page {
@@ -146,4 +180,65 @@ margin-top:2vw;
 .contact-form {
   text-align:center;
   margin: 1vw;
+}
+
+/* Services */
+
+.services-overview-section {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  gap:0vw;
+  margin:1.75rem;
+}
+
+.services-text-subsection p {
+  margin:1.5rem;
+}
+
+.services-text-subsection h2 {
+    text-align:center;  
+}
+
+.services-text-subsection {
+  text-align:left;
+  margin: 0.1rem 0.2rem;
+  width:35%;
+}
+
+.services-media-subsection {
+  justify-content: center;
+}
+
+.services-media-subsection img {
+
+  height: auto;
+  width:auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.services-table  {
+    max-height: 300px;     /* sets the scrollable area height */
+    overflow-y: auto;      /* enables vertical scroll */
+    border: 1px solid #000000;
+    margin: 2vw 20vw;
+}
+
+/* make header stick at the top */
+table thead th {
+    position: sticky;
+    top: 0;
+
+}
+
+/* optional styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.5rem;
+    border-bottom: 1px solid #000000;
 }
