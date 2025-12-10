@@ -120,6 +120,7 @@ footer p {
 
 .page-header {
 text-align:center;
+margin:2vw;
 }
 
 .footer-main {
@@ -211,7 +212,6 @@ margin-top:2vw;
 }
 
 .services-media-subsection img {
-
   height: auto;
   width:auto;
   border-radius: 8px;
@@ -219,11 +219,62 @@ margin-top:2vw;
 }
 
 .services-table  {
-    max-height: 300px;     /* sets the scrollable area height */
-    overflow-y: auto;      /* enables vertical scroll */
-    border: 1px solid #000000;
-    margin: 2vw 20vw;
+  max-height: 300px;     
+  overflow-y: auto;      
+  border: 1px solid #000000;
+  margin: 2vw 20vw;
 }
+
+/* Gallery */
+
+.gallery-section {
+  margin: 3vw 3vw;
+  gap: 2vw;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.gallery-thumbnail {
+  height:auto;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer; /* Makes cursor 'pointed' as visual indicator*/
+  object-fit:cover;
+}
+
+/* Dark blur background */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Fill screen with dark blur */
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.849);
+  backdrop-filter: blur(8px);   
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Show the popup when targeted */
+.lightbox:target {
+  display: flex;
+}
+
+/* The expanded image */
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+
 
 /* make header stick at the top */
 table thead th {

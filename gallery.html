@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<!-- I have diverged slightly from the original wireframe to better meet the assessment criteria;
+    The gallery grid is 4x4, the images are one consistent size (850x925px),
+    and the image opening/closing functionality has changed due to the limitations of only using HTML. -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Snazzy Paws Dog Grooming</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+
+<html lang="en">
+    <body class="background-theme">
+        <header> 
+            <nav class="accent-theme">
+                <ul class="nav-text">
+                    <li><a class="sp-nav-header" href=index.html>Snazzy Paws Grooming</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="booking.html">Book now!</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <h1 class="page-header"> Gallery </h1>
+            
+            <div class="gallery-section">
+                <a href="#dog-img-1"> <!-- Open 'dog-img-1' popup-->
+                    <img src="images/dog_gallery_1_thumb.png" class="gallery-thumbnail" alt="A smiling golden retriever looking at the camera">
+                </a>
+
+                <div id="dog-img-1" class="lightbox"> 
+                    <a href="#">
+                        <img src="images/dog_gallery_1.png" alt="A smiling golden retriever looking at the camera">
+                    </a>
+                </div>
+
+                <a href="#dog-img-2">
+                    <img src="images/dog_gallery_2_thumb.png" class="gallery-thumbnail" alt="A smiling dog, mid-walk, looking at the camera">
+                </a>
+
+                <div id="dog-img-2" class="lightbox"> 
+                    <a href="#">
+                        <img src="images/dog_gallery_2.png" alt="A smiling dog, mid-walk, looking at the camera">
+                    </a>
+                </div>
+
+                <div id="dog-img-3" class="lightbox">
+                    <a href="#">
+                        <img src="images/dog_gallery_3.png" alt="A close-up of a smiling white dog">
+                    </a>
+                </div>
+
+                <a href="#dog-img-3">
+                    <img src="images/dog_gallery_3_thumb.png" class="gallery-thumbnail" alt="A close-up of a smiling white dog">
+                </a>
+
+                <a href="#dog-img-4">
+                    <img src="images/dog_gallery_4_thumb.png" class="gallery-thumbnail" alt="A close-up of a dogs paws">
+                </a>
+
+                <div id="dog-img-4" class="lightbox">
+                    <a href="#">
+                        <img src="images/dog_gallery_4.png" alt="A close-up of a dogs paws">
+                    </a>
+                </div>
+
+
+            </div>
+
+            <footer class="accent-theme footer-main">
+                <div class="footer-subsection">
+                    <h1 class="header-small">Our Hours</h1> 
+                    <p class="text-small">
+                        Monday - Saturday <br>
+                        9AM - 5PM
+                    </p>
+                </div>
+
+                <div class="footer-subsection">
+                    <h1 class="header-small">Visit us</h1>
+                    <p class="text-small">
+                        57 Sunshine Avenue <br>
+                        Te Rapa, Hamilton 3200</p>
+                </div>
+            </footer>
+            
+        </main>
