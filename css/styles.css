@@ -32,32 +32,11 @@ p, td {
   margin:0.5rem;
 }
 
-nav {
-  display: flex;
-  height: auto;
-  flex-grow:3;
-}
 
-nav a { /* Element used to create hyperlinks */
-  text-decoration: none;
-  color: #ffffff; 
-  font-weight: bold;
-}
 
-nav li {
-  margin:1vw;
-}
+.nav-text {
 
-nav ul { 
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: hidden; /* Prevents text from flowing outside of navbar*/
-  list-style-type: none; /* Hides "." beside each item */
-  margin: 0;
-  padding: 0;
-  font-size: clamp(0.9rem, 1.82vw, 1.82vw);  /* Approximately 35PX on 1920-1080 resolution, adapts for smaller resolutions*/
 }
-
 
 footer {
   display: flex;
@@ -95,11 +74,15 @@ footer p {
 /* Colour Themes */
 
 .accent-theme {
-  background-color: #1d5174;
+  background-color: #16374d;
 }
 
 .background-theme {
-  background-color:#d1e8ff;
+  background-color:#d9e1e9;
+}
+
+.footer-theme {
+  background-color: #000000;
 }
 
 /* Font classes */
@@ -141,6 +124,37 @@ text-align:center
 
 .sp-nav-header {
   margin-right: 2rem;
+  flex:1;
+  font-size: clamp(2vw, 2.5vw, 58px);
+  margin: 0.5vw;
+}
+
+nav {
+  display: flex;
+  height: auto;
+  flex-grow:3;
+}
+
+nav a { /* Element used to create hyperlinks */
+  text-decoration: none;
+  color: #ffffff; 
+  font-weight: bold;
+}
+
+nav li {
+  margin:1vw;
+}
+
+nav ul { 
+  gap:1.5vw;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden; /* Prevents text from flowing outside of navbar*/
+  list-style-type: none; /* Hides "." beside each item */
+  margin: 0;
+  padding-left: 1vw;
+  padding-right: 5vw;
+  font-size: clamp(0.9rem, 1.82vw, 1.82vw);  /* Approximately 35PX on 1920-1080 resolution, adapts for smaller resolutions*/
 }
 
 /* Footer bar */
