@@ -18,23 +18,59 @@
                 </div>
 
                 <ul class="nav-text">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="booking.html">Book now!</a></li>
+                    <li class="btn button-container accent-theme"><a href="index.html">Home</a></li>
+                    <li class="btn button-container accent-theme"><a href="contact.html">Contact us</a></li>
+                    <li class="btn button-container accent-theme"><a href="services.html">Services</a></li>
+                    <li class="btn button-container accent-theme"><a href="gallery.html">Gallery</a></li>
+                    <li class="btn button-container accent-theme"><a href="booking.html">Book now!</a></li>
                 </ul>
             </nav>
         </header>
         
         <main>
+                <h1 class="page-header">Booking Details</h1>
+                
+                <div class="booking-form"> 
+                    <form action="booking-services.html" method="POST">
+                        <table>
+                        
+                        <tr>
+                            <td><label class="text-standard" for="full_name">Owner's Full name:</label></td> <td><input type="text" id="full_name" required></td>
+                        </tr>
+                        
+                        <tr>                    
+                            <td><label for="email">Owner's Email Address:</label></td> <td><input type="email" id="email" required></td>
+                        </tr>
+
+                        <tr>                    
+                            <td><label for="pet_name">Dog's name:</label></td> <td><input type="text" id="pet-name" required></td>
+                        </tr>
+                        
+                        <tr>                    
+                            <td><label for="pet_age">Dog's age &#40Years&#41:</label></td> <td><input type="number" id="pet_age" required></td>
+                        </tr>
+
+                        <tr>                    
+                            <td><label for="additional">Additional information:</label></td> 
+                            <td>
+                                <textarea id="additional" class="additional-box" rows="5"></textarea>
+                            </td>
+                        </tr>
+
+
+
+                        </tr>
+
+                        </table>
+                        
+                        <div class="booking-form">
+                            <button class="btn" type="submit">Submit</button>
+                        </div>
+
+                    </form>
+            </div>
             
             <div>
-                <h1 class="page-header">Booking</h1>
-            </div>
-
-            <div></div>
-
             <footer class="accent-theme footer-main footer-theme">
                 <div class="footer-subsection">
                     <h1 class="header-small">Our Hours</h1> 
