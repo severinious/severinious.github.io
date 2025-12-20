@@ -11,7 +11,7 @@
 <html lang="en">
     <body class="background-theme">
         <header> 
-            <nav class="accent-theme">
+            <nav class="accent-theme" role="navigation" aria-label="Navigation menu">
 
                 <div class="sp-nav-header">
                     <a href=index.html>Snazzy Paws Grooming</a>
@@ -30,36 +30,39 @@
         <main>
 
             <div class="contact-page">
-                <div class="text-section contact-details">
-                    <h1>Contact Details</h1>
-                    
-                    <p>
-                        Phone: 022-654-1253 <br>
-                        Email: <a href="mailto:snazzypawsdoggrooming@gmail.com">snazzypawsdoggrooming@gmail.com</a> <br>
-                        We are located at 57 Sunshine Avenue, Te Rapa, Hamilton 3200 <br>
-                        View the map below to find us!
-                    </p>
+                <div class="text-section contact-details" role="region" aria-labelledby="contact-details-heading">
+                    <h1 id="contact-details-heading">Contact Details</h1>
+                        
+                        <p>
+                            Phone: 022-654-1253 <br>
+                            Email: <a href="mailto:snazzypawsdoggrooming@gmail.com">snazzypawsdoggrooming@gmail.com</a> <br>
+                            We are located at 57 Sunshine Avenue, Te Rapa, Hamilton 3200 <br>
+                            View the map below to find us!
+                        </p>
 
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.5842787267675!2d175.2409965596655!3d-37.76114538913056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d225a2eed4f2f%3A0x482638a50c1f8ec2!2s57%20Sunshine%20Avenue%2C%20Te%20Rapa%2C%20Hamilton%203200!5e1!3m2!1sen!2snz!4v1765068062906!5m2!1sen!2snz"
-                        width="600" height="450"
-                        style="border:0;" allowfullscreen=""
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                        <iframe
+                            aria-label="Map showing 57 Sunshine Avenue, Hamilton"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.5842787267675!2d175.2409965596655!3d-37.76114538913056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d225a2eed4f2f%3A0x482638a50c1f8ec2!2s57%20Sunshine%20Avenue%2C%20Te%20Rapa%2C%20Hamilton%203200!5e1!3m2!1sen!2snz!4v1765068062906!5m2!1sen!2snz"
+                            width="600" height="450"
+                            style="border:0;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                 </div>
 
                 <div class="contact-form">
-                    <h1>Contact Form</h1>
+                    <h2>Contact Form</h2>
 
                     <p>Please fill out our contact form below to contact us!</p>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScRdpPOBkSdBOvwZ3Mltn_qYiDyDUa_mLQpy28eRwQ5jq3Plg/viewform?embedded=true"
+                    <iframe 
+                    aria-label="Snazzy Paws contact form" 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScRdpPOBkSdBOvwZ3Mltn_qYiDyDUa_mLQpy28eRwQ5jq3Plg/viewform?embedded=true"
                     width="640" height="858"
                     frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 </div>
                 
             </div>
 
-            <footer class="accent-theme footer-main footer-theme">
+            <footer class="accent-theme footer-main footer-theme" role="contentinfo" aria-label="Hours and location">
                 <div class="footer-subsection">
                     <h1 class="header-small">Our Hours</h1> 
                     <p class="text-small">

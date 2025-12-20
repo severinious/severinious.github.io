@@ -1,3 +1,8 @@
+<!-- 
+    Severin Romaine - 5117711 
+    BIT607 - Assessment 2 
+-->
+
 <!DOCTYPE html>
 
 <head>
@@ -11,7 +16,7 @@
 <html lang="en">
     <body class="background-theme">
         <header> 
-            <nav class="accent-theme">
+            <nav class="accent-theme" role="navigation" aria-label="Navigation menu">
 
                 <div class="sp-nav-header">
                     <a href=index.html>Snazzy Paws Grooming</a>
@@ -28,7 +33,7 @@
         </header>
         
         <main>
-            <h1 class="page-header">Services</h1>
+            <h1 id="services-heading" class="page-header">Services</h1>
 
             <div class="services-overview-section">
                 <div class="text-section">
@@ -50,17 +55,17 @@
             </div>
 
             <div class="button-container">
-                <a href="book.html" class="btn">Book an appointment!</a>
+                <a href="booking.html" class="btn">Book an appointment!</a>
             </div>
 
-            <div class="services-table">
+            <div class="services-table" role="region" aria-labelledby="services-heading">
                 <table>
-                    <thread>
+                    <thead>
                         <tr>
-                            <th>Services we offer</th>
-                            <th>Price</th>
+                            <th scope="col">Services we offer</th>
+                            <th scope="col">Price</th>
                         </tr>
-                    </thread>
+                    </thead>
 
                     <tbody>
                         <tr><td>Bath and brush: shampoo, blow-dry, brush-out and nail trim.</td><td>$25-$50</td></tr>
@@ -81,7 +86,7 @@
                 </table>
             </div>
 
-            <footer class="accent-theme footer-main footer-theme">
+            <footer class="accent-theme footer-main footer-theme" role="contentinfo" aria-label="Hours and location">
                 <div class="footer-subsection">
                     <h1 class="header-small">Our Hours</h1> 
                     <p class="text-small">

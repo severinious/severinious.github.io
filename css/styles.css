@@ -2,9 +2,6 @@
 
 
 /* Elements */
-header {
-  color:#ffffff
-}
 
 body { 
   margin:0px /* Required for nav bar to fill the top part of the page*/
@@ -27,31 +24,22 @@ th {
   font-weight: lighter;
 }
 
+thead th {
+    position: sticky;
+    color:white;
+    top: 0;
+    background-color: #0d3958;
+    z-index: 5;
+    border-bottom: 2px solid #000000;
+}
+
+
 p, td {
   font-size: clamp(1rem, 1.3vw, 25px); /* 25px */
   margin:0.5rem;
 }
 
-
-
-.nav-text {
-
-}
-
-footer {
-  display: flex;
-  
-  /* Ensures bar fits text while not going below a minimum height */
-  min-height: 5vh;
-  height: auto;
-  width:100%;
-  color:white;
-  flex-grow:5;
-}
-
-footer p {
-  margin: 0.2rem;
-}
+/* Button */
 
 .btn {
   display: inline-block;
@@ -65,11 +53,6 @@ footer p {
   font-size:clamp(1.2rem, 1.88vw, 36px);
 }
 
-nav .btn {
-  padding: 0.5vw 0.5vw;
-  font-size:clamp(0.8rem, 1.88vw, 36px);
-}
-
 .btn:hover {
   background-color: #2d7daf;
 }
@@ -77,8 +60,6 @@ nav .btn {
 .button-container {
   text-align:center;
 }
-
-/* ----- Classes ----- */
 
 /* Colour Themes */
 
@@ -110,9 +91,6 @@ margin:2vw;
 }
 
 
-
-/* ----- Section Classes ----- */
-
 /* Reusable sections */
 
 .text-section {
@@ -124,7 +102,6 @@ margin:2vw;
 .text-section h1, h2{
 text-align:center
 }
-
 
 
 /* Navigation bar */
@@ -165,6 +142,11 @@ nav ul {
   font-size: clamp(0.9rem, 1.82vw, 1.82vw);  /* Approximately 35PX on 1920-1080 resolution, adapts for smaller resolutions*/
 }
 
+nav .btn {
+  padding: 0.5vw 0.5vw;
+  font-size:clamp(0.8rem, 1.88vw, 36px);
+}
+
 /* Footer bar */
 
 .footer-main {
@@ -175,6 +157,21 @@ nav ul {
 .footer-subsection {
   margin-left: 2rem;
   margin-right:2rem;
+}
+
+footer {
+  display: flex;
+  
+  /* Ensures bar fits text while not going below a minimum height */
+  min-height: 5vh;
+  height: auto;
+  width:100%;
+  color:white;
+  flex-grow:5;
+}
+
+footer p {
+  margin: 0.2rem;
 }
 
 /* Index */
@@ -264,8 +261,38 @@ nav ul {
   height:auto;
   width: 100%;
   border-radius: 10px;
-  cursor: pointer; /* Makes cursor 'pointed' as visual indicator*/
+  cursor: pointer; 
   object-fit:cover;
+}
+
+/* Dark blur background */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Fill screen with dark blur */
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.849);
+  backdrop-filter: blur(8px);   
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+/* The expanded image */
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 /* Booking */
@@ -287,38 +314,14 @@ nav ul {
 }
 
 .additional-box {
-  width:auto;
+  width:100%;
 }
 
-/* Dark blur background */
-.lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  /* Fill screen with dark blur */
-  width: 100%;
-  height: 100%;
-
-  background: rgba(0, 0, 0, 0.849);
-  backdrop-filter: blur(8px);   
-  display: none;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
-
-/* Show the popup when targeted */
-.lightbox:target {
+.booking-received {
   display: flex;
-}
-
-/* The expanded image */
-.lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
 
@@ -330,7 +333,6 @@ table thead th {
 
 }
 
-/* optional styling */
 table {
     width: 100%;
     border-collapse: collapse;

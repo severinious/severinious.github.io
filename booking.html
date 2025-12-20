@@ -1,3 +1,13 @@
+<!-- 
+    Severin Romaine - 5117711 
+    BIT607 - Assessment 2 
+
+    Note:
+        The booking process has changed compared to the original wireframes in order to meet the requirement of having a form and to account
+        for the limitations of using only HTML. I have removed the 'Booking time and date' page and instead implemented calendar into the
+        form.
+-->
+
 <!DOCTYPE html>
 
 <head>
@@ -11,7 +21,7 @@
 <html lang="en">
     <body class="background-theme">
         <header> 
-            <nav class="accent-theme">
+            <nav class="accent-theme" role="navigation" aria-label="Navigation menu">
 
                 <div class="sp-nav-header">
                     <a href=index.html>Snazzy Paws Grooming</a>
@@ -28,50 +38,53 @@
         </header>
         
         <main>
-                <h1 class="page-header">Booking Details</h1>
-                
-                <div class="booking-form"> 
-                    <form action="booking-services.html" method="POST">
-                        <table>
-                        
-                        <tr>
-                            <td><label class="text-standard" for="full_name">Owner's Full name:</label></td> <td><input type="text" id="full_name" required></td>
-                        </tr>
-                        
-                        <tr>                    
-                            <td><label for="email">Owner's Email Address:</label></td> <td><input type="email" id="email" required></td>
-                        </tr>
+            <h1 id="booking-heading" class="page-header">Booking Details</h1>
+            
+            <div class="booking-form"> 
+                <form action="booking-services.html" method="POST" role="form" aria-labelledby="booking-heading">
+                    <table>
+                    
+                    <tr>
+                        <td><label class="text-standard" for="full_name">Owner's Full name:</label></td> <td><input type="text" id="full_name" required></td>
+                    </tr>
+                    
+                    <tr>                    
+                        <td><label for="email">Owner's Email Address:</label></td> <td><input type="email" id="email" required></td>
+                    </tr>
 
-                        <tr>                    
-                            <td><label for="pet_name">Dog's name:</label></td> <td><input type="text" id="pet-name" required></td>
-                        </tr>
-                        
-                        <tr>                    
-                            <td><label for="pet_age">Dog's age &#40Years&#41:</label></td> <td><input type="number" id="pet_age" required></td>
-                        </tr>
+                    <tr>                    
+                        <td><label for="pet_name">Dog's name:</label></td> <td><input type="text" id="pet_name" required></td>
+                    </tr>
+                    
+                    <tr>                    
+                        <td><label for="pet_breed">Dog's breed:</label></td> <td><input type="text" id="pet_breed" required></td>
+                    </tr>
 
-                        <tr>                    
-                            <td><label for="additional">Additional information:</label></td> 
-                            <td>
-                                <textarea id="additional" class="additional-box" rows="5"></textarea>
-                            </td>
-                        </tr>
+                    <tr>                    
+                        <td><label for="pet_age">Dog's age &#40Years&#41:</label></td> <td><input type="number" id="pet_age" required></td>
+                    </tr>
 
+                    <tr>                    
+                        <td><label for="additional">Additional information:</label></td> 
+                        <td>
+                            <textarea id="additional" class="additional-box" rows="5"></textarea>
+                        </td>
+                    </tr>
 
+                    <tr>
+                        <td><label for="event-date">Select appointment time & date</label></td> <td><input type="datetime-local" id="event-date" name="event-date" required></td>
+                    </tr>
+                    
+                    </table>
+                    
+                    <div class="booking-form">
+                        <button class="btn" type="submit">Submit & Continue</button>
+                    </div>
 
-                        </tr>
-
-                        </table>
-                        
-                        <div class="booking-form">
-                            <button class="btn" type="submit">Submit</button>
-                        </div>
-
-                    </form>
+                </form>
             </div>
             
-            <div>
-            <footer class="accent-theme footer-main footer-theme">
+            <footer class="accent-theme footer-main footer-theme" role="contentinfo" aria-label="Hours and location">
                 <div class="footer-subsection">
                     <h1 class="header-small">Our Hours</h1> 
                     <p class="text-small">
