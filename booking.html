@@ -24,7 +24,7 @@
             <nav class="accent-theme" role="navigation" aria-label="Navigation menu">
 
                 <div class="sp-nav-header">
-                    <a href=index.html>Snazzy Paws Grooming</a>
+                    <a aria-label="Main website header" href=index.html>Snazzy Paws Grooming</a>
                 </div>
 
                 <ul class="nav-text">
@@ -40,53 +40,49 @@
         <main>
             <h1 id="booking-heading" class="page-header">Booking Details</h1>
             
-            <div class="booking-form"> 
+            <div class="booking-form">
                 <form action="booking-services.html" method="POST" role="form" aria-labelledby="booking-heading">
                     <table>
-                    
-                    <tr>
-                        <td><label class="text-standard" for="full_name">Owner's Full name:</label></td> <td><input type="text" id="full_name" required></td>
-                    </tr>
-                    
-                    <tr>                    
-                        <td><label for="email">Owner's Email Address:</label></td> <td><input type="email" id="email" required></td>
-                    </tr>
-
-                    <tr>                    
-                        <td><label for="pet_name">Dog's name:</label></td> <td><input type="text" id="pet_name" required></td>
-                    </tr>
-                    
-                    <tr>                    
-                        <td><label for="pet_breed">Dog's breed:</label></td> <td><input type="text" id="pet_breed" required></td>
-                    </tr>
-
-                    <tr>                    
-                        <td><label for="pet_age">Dog's age &#40Years&#41:</label></td> <td><input type="number" id="pet_age" required></td>
-                    </tr>
-
-                    <tr>                    
-                        <td><label for="additional">Additional information:</label></td> 
-                        <td>
-                            <textarea id="additional" class="additional-box" rows="5"></textarea>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td><label for="event-date">Select appointment time & date</label></td> <td><input type="datetime-local" id="event-date" name="event-date" required></td>
-                    </tr>
-                    
+                        <tr>
+                            <td><label class="text-standard" for="full_name">Owner's Full name:</label></td>
+                            <td><input type="text" id="full_name" name="full_name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Owner's Email Address:</label></td>
+                            <td><input type="email" id="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pet_name">Dog's name:</label></td>
+                            <td><input type="text" id="pet_name" name="pet_name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pet_breed">Dog's breed:</label></td>
+                            <td><input type="text" id="pet_breed" name="pet_breed" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pet_age">Dog's age &#40Years&#41;:</label></td>
+                            <td><input type="number" id="pet_age" name="pet_age" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="additional">Additional information:</label></td>
+                            <td>
+                                <textarea id="additional" name="additional" class="additional-box" rows="5"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="event-date">Select appointment time & date</label></td>
+                            <td><input type="datetime-local" id="event-date" name="event-date" required></td>
+                        </tr>
                     </table>
-                    
                     <div class="booking-form">
                         <button class="btn" type="submit">Submit & Continue</button>
                     </div>
-
                 </form>
             </div>
             
             <footer class="accent-theme footer-main footer-theme" role="contentinfo" aria-label="Hours and location">
                 <div class="footer-subsection">
-                    <h1 class="header-small">Our Hours</h1> 
+                    <h2 class="header-small">Our Hours</h2> 
                     <p class="text-small">
                         Monday - Saturday <br>
                         9AM - 5PM
@@ -94,7 +90,7 @@
                 </div>
 
                 <div class="footer-subsection">
-                    <h1 class="header-small">Visit us</h1>
+                    <h2 class="header-small">Visit us</h2>
                     <p class="text-small">
                         57 Sunshine Avenue <br>
                         Te Rapa, Hamilton 3200</p>
