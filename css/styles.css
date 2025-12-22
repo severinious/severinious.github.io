@@ -84,7 +84,6 @@ p, td {
 .header-small {
   font-size: clamp(1.2rem, 1.6vw, 2rem);
   font-weight: bold;
-
 }
 
 .page-header {
