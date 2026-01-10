@@ -17,7 +17,7 @@
         
         <header> 
             <nav aria-label="Navigation menu">
-                
+            
                 <!-- LARGE screens (Desktop monitors)-->
                 <div class="w3-bar w3-indigo w3-xlarge w3-hide-small w3-hide-medium">
                     <a href="index.html" class="w3-bar-item w3-button w3-left w3-hide-small">Snazzy Paws Dog Grooming</a>
@@ -52,6 +52,8 @@
                 </div>
             </nav>
         </header>
+
+        <main>
             <section>
                 <div class="w3-flex w3-margin index-main">
                     <div>
@@ -98,6 +100,7 @@
                                 </p>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -121,25 +124,23 @@
                 </div>
             </div>
         </footer>
-
-            <script>
-                function displayMenu() {
-                    var x = document.getElementById("dropdown-menu");
-                    if (x.className.indexOf("w3-show") == -1) {
-                        x.className += " w3-show";}    
-                    else {x.className = x.className.replace(" w3-show", "");
-                    }
+        <script>
+            function displayMenu() {
+                var x = document.getElementById("dropdown-menu");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";}    
+                else {x.className = x.className.replace(" w3-show", "");
                 }
+            }
 
-                function displayMore() {
-                    var x = document.getElementById("show-more");
-                    if (x.className.indexOf("w3-show") == -1) {
-                        x.className += " w3-show";
-                    } else { 
-                        x.className = x.className.replace(" w3-show", "");
-                    }
-                } 
-            </script>
-               
+            function displayMore() {
+                var x = document.getElementById("show-more");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else { 
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            } 
+        </script>
     </body>
 </html>

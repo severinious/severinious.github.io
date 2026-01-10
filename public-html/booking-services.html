@@ -17,7 +17,6 @@
     </head>
 
     <body class="w3-light-grey">
-        
         <header> 
             <nav aria-label="Navigation menu">
                 
@@ -139,9 +138,8 @@
                         </tbody>
                     </table>
                 </div>
-                
                 <div class="w3-margin-bottom w3-center">
-                    <a href="request-received.html" class="w3-margin w3-btn w3-xxlarge w3-indigo" type="submit">Confirm & Book</a>
+                    <a href="request-received.html" class="w3-margin w3-btn w3-xxlarge w3-indigo">Confirm & Book</a>
                 </div>
         </main>
 
@@ -164,25 +162,25 @@
             </div>
         </footer>
 
-            <script>
-                function displayMenu() {
-                    var x = document.getElementById("dropdown-menu");
-                    if (x.className.indexOf("w3-show") == -1) {
-                        x.className += " w3-show";}    
-                    else {x.className = x.className.replace(" w3-show", "");
-                    }
+        <script>
+            function displayMenu() {
+                var x = document.getElementById("dropdown-menu");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";}    
+                else {x.className = x.className.replace(" w3-show", "");
                 }
+            }
 
-                function displayMore() {
-                    var x = document.getElementById("show-more");
-                    if (x.className.indexOf("w3-show") == -1) {
-                        x.className += " w3-show";
-                    } else { 
-                        x.className = x.className.replace(" w3-show", "");
-                    }
-                } 
-          
-            </script>
+            function displayMore() {
+                var x = document.getElementById("show-more");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else { 
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            } 
+        
+        </script>
                
     </body>
 </html>

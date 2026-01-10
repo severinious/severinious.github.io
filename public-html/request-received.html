@@ -59,7 +59,6 @@
             <h1 class="w3-bold w3-xxxlarge w3-center">
                 Your appointment request has been received!
             </h1>
-
             <div class="w3-center">
                 <p>
                     Thank you for booking an appointment with us. We will reach out to you via email to confirm the appointment. We look forward to seeing you!
@@ -86,25 +85,23 @@
                 </div>
             </div>
         </footer>
-
-            <script>
-                function displayMenu() {
-                    var x = document.getElementById("dropdown-menu");
-                    if (x.className.indexOf("w3-show") == -1) {
-                        x.className += " w3-show";}    
-                    else {x.className = x.className.replace(" w3-show", "");
-                    }
+        <script>
+            function displayMenu() {
+                var x = document.getElementById("dropdown-menu");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";}    
+                else {x.className = x.className.replace(" w3-show", "");
                 }
+            }
 
-                function displayMore() {
-                    var x = document.getElementById("show-more");
-                    if (x.className.indexOf("w3-show") == -1) {
-                        x.className += " w3-show";
-                    } else { 
-                        x.className = x.className.replace(" w3-show", "");
-                    }
-                } 
-            </script>
-                    
+            function displayMore() {
+                var x = document.getElementById("show-more");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else { 
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            } 
+        </script>
     </body>
 </html>

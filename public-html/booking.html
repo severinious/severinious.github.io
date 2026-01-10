@@ -23,7 +23,7 @@
         
         <header> 
             <nav aria-label="Navigation menu">
-                
+
                 <!-- LARGE screens (Desktop monitors)-->
                 <div class="w3-bar w3-indigo w3-xlarge w3-hide-small w3-hide-medium">
                     <a href="index.html" class="w3-bar-item w3-button w3-left w3-hide-small">Snazzy Paws Dog Grooming</a>
@@ -61,54 +61,49 @@
         
         <main>
             <h1 id="booking-heading" class="page-header w3-bold w3-xxxlarge w3-center">Booking Details</h1>
-            
-            <div class="w3-container w3-margin-top">
-                
-<form action="booking-services.html" method="POST" aria-labelledby="booking-heading">
-    <table class="booking-form w3-margin-bottom">
-        <tr>
-            <td><label class="w3-large w3-left" for="full_name">Owner's Full name:</label></td>
-            <td><input class="w3-large text-box" type="text" id="full_name" name="full_name" required></td>
-        </tr>
-        <tr>
-            <td><label class="w3-large w3-left" for="email">Owner's Email Address:</label></td>
-            <td><input class="w3-large text-box" type="email" id="email" name="email" required></td>
-        </tr>
-        <tr>
-            <td><label class="w3-large w3-left" for="pet_name">Dog's name:</label></td>
-            <td><input class="w3-large text-box" type="text" id="pet_name" name="pet_name" required></td>
-        </tr>
-        <tr>
-            <td><label class="w3-large w3-left" for="pet_breed">Dog's breed:</label></td>
-            <td><input class="w3-large text-box" type="text" id="pet_breed" name="pet_breed" required></td>
-        </tr>
-        <tr>
-            <td><label class="w3-large w3-left" for="pet_age">Dog's age &#40;Years&#41;:</label></td>
-            <td><input class="w3-large  text-box" type="number" id="pet_age" name="pet_age" required></td>
-        </tr>
-        <tr>
-            <td><label class="w3-large w3-left" for="additional">Additional information:</label></td>
-            <td>
-                <textarea class="w3-large text-box" id="additional" name="additional" rows="5"></textarea>
-            </td>
-        </tr>
-        <tr>
-            <td><label class="w3-large w3-left" for="event-date">Select appointment time & date</label></td>
-            <td><input class="date-time w3-large text-box" type="datetime-local" id="event-date" name="event-date" required></td>
-        </tr>
-    </table>
+            <div class="w3-container w3-margin-top">  
+                <form action="booking-services.html" method="POST" aria-labelledby="booking-heading">
+                    <table class="booking-form w3-margin-bottom">
+                        <tr>
+                            <td><label class="w3-large w3-left" for="full_name">Owner's Full name:</label></td>
+                            <td><input class="w3-large text-box" type="text" id="full_name" name="full_name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label class="w3-large w3-left" for="email">Owner's Email Address:</label></td>
+                            <td><input class="w3-large text-box" type="email" id="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label class="w3-large w3-left" for="pet_name">Dog's name:</label></td>
+                            <td><input class="w3-large text-box" type="text" id="pet_name" name="pet_name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label class="w3-large w3-left" for="pet_breed">Dog's breed:</label></td>
+                            <td><input class="w3-large text-box" type="text" id="pet_breed" name="pet_breed" required></td>
+                        </tr>
+                        <tr>
+                            <td><label class="w3-large w3-left" for="pet_age">Dog's age &#40;Years&#41;:</label></td>
+                            <td><input class="w3-large  text-box" type="number" id="pet_age" name="pet_age" required></td>
+                        </tr>
+                        <tr>
+                            <td><label class="w3-large w3-left" for="additional">Additional information:</label></td>
+                            <td>
+                                <textarea class="w3-large text-box" id="additional" name="additional" rows="5"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label class="w3-large w3-left" for="event-date">Select appointment time & date</label></td>
+                            <td><input class="date-time w3-large text-box" type="datetime-local" id="event-date" name="event-date" required></td>
+                        </tr>
+                    </table>
 
-    <!-- For large screens -->
-    <div class="w3-margin-bottom w3-center">
-        <button class="w3-hide-small w3-btn w3-xxlarge w3-indigo" type="submit">Submit & Continue</button>
-    </div>
-
-    <div class="w3-margin-bottom w3-center">
-        <button class="w3-hide-medium w3-hide-large w3-btn w3-large w3-indigo" type="submit">Submit & Continue</button>
-    </div>
-
-</form>
-
+                    <!-- For large screens -->
+                    <div class="w3-margin-bottom w3-center">
+                        <button class="w3-hide-small w3-btn w3-xxlarge w3-indigo" type="submit">Submit & Continue</button>
+                    </div>
+                    <div class="w3-margin-bottom w3-center">
+                        <button class="w3-hide-medium w3-hide-large w3-btn w3-large w3-indigo" type="submit">Submit & Continue</button>
+                    </div>
+                </form>
             </div>  
         </main>
 
@@ -130,25 +125,23 @@
                 </div>
             </div>
         </footer>
-
-            <script>
-                function displayMenu() {
-                    var x = document.getElementById("dropdown-menu");
-                    if (x.className.indexOf("w3-show") == -1) {
-                        x.className += " w3-show";}    
-                    else {x.className = x.className.replace(" w3-show", "");
-                    }
+        <script>
+            function displayMenu() {
+                var x = document.getElementById("dropdown-menu");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";}    
+                else {x.className = x.className.replace(" w3-show", "");
                 }
+            }
 
-                function displayMore() {
-                    var x = document.getElementById("show-more");
-                    if (x.className.indexOf("w3-show") == -1) {
-                        x.className += " w3-show";
-                    } else { 
-                        x.className = x.className.replace(" w3-show", "");
-                    }
-                } 
-            </script>
-               
+            function displayMore() {
+                var x = document.getElementById("show-more");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else { 
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            } 
+        </script>
     </body>    
 </html>
