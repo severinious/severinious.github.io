@@ -1,4 +1,7 @@
+##! Note to assessor: AuthUserFile requires an absolute file path, so this 
+##! will need to be manually set if tested.
+
 AuthType Basic
 AuthName "Staff Area"
-AuthUserFile "C:/Open Polytechnic/NZ Certificate in Computing L5/BIT607/Assessment 3/BIT607_A3/password/.htpasswd"
+AuthUserFile "C:/Open Polytechnic/NZ Certificate in Computing L5/BIT607/Assessment 3/severinious.github.io/password/.htpasswd"
 Require valid-user
