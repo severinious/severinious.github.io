@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Staff Area"
+AuthUserFile "C:/Open Polytechnic/NZ Certificate in Computing L5/BIT607/Assessment 3/BIT607_A3/password/.htpasswd"
+Require valid-user

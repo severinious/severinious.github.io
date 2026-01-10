@@ -1,0 +1,141 @@
+<!-- 
+    Severin Romaine - 5117711 
+    BIT607 - Assessment 3 
+
+    Note:
+        I have diverged slightly from the original wireframe to better meet the assessment criteria;
+        The gallery grid is 4x4 and the image opening/closing functionality is slightly different because of the limitations of only using HTML.
+
+        To ensure a responsive layout, the gallery is 4x4 on a 1920 x 1080 monitor, but is 2x8 on most mobile devices.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snazzy Paws Dog Grooming</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="css/styles.css">    
+    </head>
+
+    <body class="w3-light-grey">
+        
+        <header> 
+            <nav aria-label="Navigation menu">
+                
+                <!-- LARGE screens (Desktop monitors)-->
+                <div class="w3-bar w3-indigo w3-xlarge w3-hide-small w3-hide-medium">
+                    <a href="index.html" class="w3-bar-item w3-button w3-left w3-hide-small">Snazzy Paws Dog Grooming</a>
+                    <div class="w3-dropdown-click w3-right w3-hide-medium w3-hide-small">
+                        <button class="w3-button nav-text" onclick="displayMore()">More ▾</button>
+                        <div id="show-more" class="nav-more w3-dropdown-content w3-bar-block w3-card-4 w3-indigo">
+                            <a href="privacy.html" class="w3-bar-item w3-button">Privacy Policy</a>
+                            <a href="staff/index.html" class="w3-bar-item w3-button">Staff Roster</a>
+                        </div>
+                    </div>
+                    <a href="booking.html" class="w3-bar-item w3-button w3-hide-small w3-right nav-text">Booking</a>
+                    <a href="gallery.html" class="w3-bar-item w3-button w3-hide-small w3-right nav-text">Gallery</a>  
+                    <a href="services.html" class="w3-bar-item w3-button w3-hide-small w3-right nav-text">Services</a>
+                    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-right nav-text">Contact us</a>
+                    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-right home-text nav-text">Home</a>
+                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="displayMenu()">&#9776;</a>
+                </div>
+
+                <!-- Medium/small screens (Tablets, laptops, phones) -->
+                <div class="w3-bar w3-indigo w3-large w3-hide-large">
+                    <a href="index.html" class="w3-bar-item w3-button w3-left">Snazzy Paws Dog Grooming</a>
+                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="displayMenu()">&#9776;</a>
+                </div>
+                <div id="dropdown-menu" class="w3-bar-block w3-indigo w3-hide w3-hide-large">
+                    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+                    <a href="contact.html" class="w3-bar-item w3-button">Contact us</a>
+                    <a href="services.html" class="w3-bar-item w3-button">Services</a>
+                    <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+                    <a href="booking.html" class="w3-bar-item w3-button">Booking</a>
+                    <a href="privacy.html" class="w3-bar-item w3-button">Privacy Policy</a>
+                    <a href="staff/index.html" class="w3-bar-item w3-button">Staff Roster</a>                        
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <h1 class="w3-xxxlarge w3-bold w3-center w3-margin">Gallery</h1>
+            <div class="gallery-grid" aria-labelledby="gallery-heading">
+                <a href="#img1"><img src="../images/dog_gallery_1_thumb.png" class="w3-image gallery-thumbnail" alt="A smiling golden retriever looking at the camera"></a>
+                <a href="#img2"><img src="../images/dog_gallery_2_thumb.png" class="gallery-thumbnail" alt="A smiling dog mid-walk, looking at the camera"></a>
+                <a href="#img3"><img src="../images/dog_gallery_3_thumb.png" class="gallery-thumbnail" alt="A close-up of a smiling white dog"></a>
+                <a href="#img4"><img src="../images/dog_gallery_4_thumb.png" class="gallery-thumbnail" alt="A close-up of a dog's paws"></a>
+                <a href="#img5"><img src="../images/dog_gallery_5_thumb.png" class="gallery-thumbnail" alt="A labrador dog lying down looking sleepy"></a>
+                <a href="#img6"><img src="../images/dog_gallery_6_thumb.png" class="gallery-thumbnail" alt="A light coloured dog sitting in a car looking out the window"></a>
+                <a href="#img7"><img src="../images/dog_gallery_7_thumb.png" class="gallery-thumbnail" alt="A small black-and-grey dog standing beside a tree"></a>
+                <a href="#img8"><img src="../images/dog_gallery_8_thumb.png" class="gallery-thumbnail" alt="A brown-and-black dog standing in a grassy yard"></a>
+                <a href="#img9"><img src="../images/dog_gallery_9_thumb.png" class="gallery-thumbnail" alt="A husky running through snow"></a>
+                <a href="#img10"><img src="../images/dog_gallery_10_thumb.png" class="gallery-thumbnail" alt="A tan dog standing alert in a forest"></a>
+                <a href="#img11"><img src="../images/dog_gallery_11_thumb.png" class="gallery-thumbnail" alt="A pug standing in snow looking up"></a>
+                <a href="#img12"><img src="../images/dog_gallery_12_thumb.png" class="gallery-thumbnail" alt="A small white dog outdoors on a sunny day"></a>
+                <a href="#img13"><img src="../images/dog_gallery_13_thumb.png" class="gallery-thumbnail" alt="A brown dog sitting on a wooden dock"></a>
+                <a href="#img14"><img src="../images/dog_gallery_14_thumb.png" class="gallery-thumbnail" alt="A long-haired Chihuahua wearing a red harness"></a>
+                <a href="#img15"><img src="../images/dog_gallery_15_thumb.png" class="gallery-thumbnail" alt="A golden dog lying on dusty ground looking up"></a>
+                <a href="#img16"><img src="../images/dog_gallery_16_thumb.png" class="gallery-thumbnail" alt="A black-and-white dog staring up at the camera"></a>
+            </div>
+            
+                <div id="img1"  class="lightbox"><a href="#"><img src="../images/dog_gallery_1.png"  alt=""></a></div>
+                <div id="img2"  class="lightbox"><a href="#"><img src="../images/dog_gallery_2.png"  alt=""></a></div>
+                <div id="img3"  class="lightbox"><a href="#"><img src="../images/dog_gallery_3.png"  alt=""></a></div>
+                <div id="img4"  class="lightbox"><a href="#"><img src="../images/dog_gallery_4.png"  alt=""></a></div>
+                <div id="img5"  class="lightbox"><a href="#"><img src="../images/dog_gallery_5.png"  alt=""></a></div>
+                <div id="img6"  class="lightbox"><a href="#"><img src="../images/dog_gallery_6.png"  alt=""></a></div>
+                <div id="img7"  class="lightbox"><a href="#"><img src="../images/dog_gallery_7.png"  alt=""></a></div>
+                <div id="img8"  class="lightbox"><a href="#"><img src="../images/dog_gallery_8.png"  alt=""></a></div>
+                <div id="img9"  class="lightbox"><a href="#"><img src="../images/dog_gallery_9.png"  alt=""></a></div>
+                <div id="img10" class="lightbox"><a href="#"><img src="../images/dog_gallery_10.png" alt=""></a></div>
+                <div id="img11" class="lightbox"><a href="#"><img src="../images/dog_gallery_11.png" alt=""></a></div>
+                <div id="img12" class="lightbox"><a href="#"><img src="../images/dog_gallery_12.png" alt=""></a></div>
+                <div id="img13" class="lightbox"><a href="#"><img src="../images/dog_gallery_13.png" alt=""></a></div>
+                <div id="img14" class="lightbox"><a href="#"><img src="../images/dog_gallery_14.png" alt=""></a></div>
+                <div id="img15" class="lightbox"><a href="#"><img src="../images/dog_gallery_15.png" alt=""></a></div>
+                <div id="img16" class="lightbox"><a href="#"><img src="../images/dog_gallery_16.png" alt=""></a></div>
+        </main>
+
+        <footer class="w3-container w3-black" aria-label="Hours and location">
+            <div class="w3-row">
+                <div class="w3-col s12 m6 w3-center">
+                    <h2>Our Hours</h2>
+                    <p>
+                        Monday - Saturday <br>
+                        9AM - 5PM
+                    </p>
+                </div>
+                <div class="w3-col s12 m6 w3-center">
+                    <h2>Visit us</h2>
+                    <p>
+                        57 Sunshine Avenue <br>
+                        Te Rapa, Hamilton 3200
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+            <script>
+                function displayMenu() {
+                    var x = document.getElementById("dropdown-menu");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";}    
+                    else {x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+
+                function displayMore() {
+                    var x = document.getElementById("show-more");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else { 
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                } 
+            </script>
+               
+    </body>
+</html>

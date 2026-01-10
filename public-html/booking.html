@@ -1,0 +1,154 @@
+<!-- 
+    Severin Romaine - 5117711 
+    BIT607 - Assessment 3 
+
+    Note:
+        The booking process has changed compared to the original wireframes in order to meet the requirement of having a form and to account
+        for the limitations of using only HTML. I have removed the 'Booking time and date' page and instead implemented calendar into the
+        form.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snazzy Paws Dog Grooming</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="css/styles.css">    
+    </head>
+
+    <body class="w3-light-grey">
+        
+        <header> 
+            <nav aria-label="Navigation menu">
+                
+                <!-- LARGE screens (Desktop monitors)-->
+                <div class="w3-bar w3-indigo w3-xlarge w3-hide-small w3-hide-medium">
+                    <a href="index.html" class="w3-bar-item w3-button w3-left w3-hide-small">Snazzy Paws Dog Grooming</a>
+                    <div class="w3-dropdown-click w3-right w3-hide-medium w3-hide-small">
+                        <button class="w3-button nav-text" onclick="displayMore()">More ▾</button>
+                        <div id="show-more" class="nav-more w3-dropdown-content w3-bar-block w3-card-4 w3-indigo">
+                            <a href="privacy.html" class="w3-bar-item w3-button">Privacy Policy</a>
+                            <a href="staff/index.html" class="w3-bar-item w3-button">Staff Roster</a>
+                        </div>
+                    </div>
+                    <a href="booking.html" class="w3-bar-item w3-button w3-hide-small w3-right nav-text">Booking</a>
+                    <a href="gallery.html" class="w3-bar-item w3-button w3-hide-small w3-right nav-text">Gallery</a>  
+                    <a href="services.html" class="w3-bar-item w3-button w3-hide-small w3-right nav-text">Services</a>
+                    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-right nav-text">Contact us</a>
+                    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-right home-text nav-text">Home</a>
+                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="displayMenu()">&#9776;</a>
+                </div>
+
+                <!-- Medium/small screens (Tablets, laptops, phones) -->
+                <div class="w3-bar w3-indigo w3-large w3-hide-large">
+                    <a href="index.html" class="w3-bar-item w3-button w3-left">Snazzy Paws Dog Grooming</a>
+                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="displayMenu()">&#9776;</a>
+                </div>
+                <div id="dropdown-menu" class="w3-bar-block w3-indigo w3-hide w3-hide-large">
+                    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+                    <a href="contact.html" class="w3-bar-item w3-button">Contact us</a>
+                    <a href="services.html" class="w3-bar-item w3-button">Services</a>
+                    <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+                    <a href="booking.html" class="w3-bar-item w3-button">Booking</a>
+                    <a href="privacy.html" class="w3-bar-item w3-button">Privacy Policy</a>
+                    <a href="staff/index.html" class="w3-bar-item w3-button">Staff Roster</a>                        
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <h1 id="booking-heading" class="page-header w3-bold w3-xxxlarge w3-center">Booking Details</h1>
+            
+            <div class="w3-container w3-margin-top">
+                
+<form action="booking-services.html" method="POST" aria-labelledby="booking-heading">
+    <table class="booking-form w3-margin-bottom">
+        <tr>
+            <td><label class="w3-large w3-left" for="full_name">Owner's Full name:</label></td>
+            <td><input class="w3-large text-box" type="text" id="full_name" name="full_name" required></td>
+        </tr>
+        <tr>
+            <td><label class="w3-large w3-left" for="email">Owner's Email Address:</label></td>
+            <td><input class="w3-large text-box" type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+            <td><label class="w3-large w3-left" for="pet_name">Dog's name:</label></td>
+            <td><input class="w3-large text-box" type="text" id="pet_name" name="pet_name" required></td>
+        </tr>
+        <tr>
+            <td><label class="w3-large w3-left" for="pet_breed">Dog's breed:</label></td>
+            <td><input class="w3-large text-box" type="text" id="pet_breed" name="pet_breed" required></td>
+        </tr>
+        <tr>
+            <td><label class="w3-large w3-left" for="pet_age">Dog's age &#40;Years&#41;:</label></td>
+            <td><input class="w3-large  text-box" type="number" id="pet_age" name="pet_age" required></td>
+        </tr>
+        <tr>
+            <td><label class="w3-large w3-left" for="additional">Additional information:</label></td>
+            <td>
+                <textarea class="w3-large text-box" id="additional" name="additional" rows="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><label class="w3-large w3-left" for="event-date">Select appointment time & date</label></td>
+            <td><input class="date-time w3-large text-box" type="datetime-local" id="event-date" name="event-date" required></td>
+        </tr>
+    </table>
+
+    <!-- For large screens -->
+    <div class="w3-margin-bottom w3-center">
+        <button class="w3-hide-small w3-btn w3-xxlarge w3-indigo" type="submit">Submit & Continue</button>
+    </div>
+
+    <div class="w3-margin-bottom w3-center">
+        <button class="w3-hide-medium w3-hide-large w3-btn w3-large w3-indigo" type="submit">Submit & Continue</button>
+    </div>
+
+</form>
+
+            </div>  
+        </main>
+
+        <footer class="w3-container w3-black" aria-label="Hours and location">
+            <div class="w3-row">
+                <div class="w3-col s12 m6 w3-center">
+                    <h2>Our Hours</h2>
+                    <p>
+                        Monday - Saturday <br>
+                        9AM - 5PM
+                    </p>
+                </div>
+                <div class="w3-col s12 m6 w3-center">
+                    <h2>Visit us</h2>
+                    <p>
+                        57 Sunshine Avenue <br>
+                        Te Rapa, Hamilton 3200
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+            <script>
+                function displayMenu() {
+                    var x = document.getElementById("dropdown-menu");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";}    
+                    else {x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+
+                function displayMore() {
+                    var x = document.getElementById("show-more");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else { 
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                } 
+            </script>
+               
+    </body>    
+</html>

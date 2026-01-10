@@ -1,0 +1,116 @@
+.background-theme {
+  background-color: #0d3958;
+}
+
+html, body {
+  font-family: "Playfair Display", Georgia, serif;
+}
+.contact-form {
+  background-color:white;
+  max-width:800px;
+}
+
+.gallery-section img {
+  width:200px;
+}
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    margin: 2rem;
+}
+
+.gallery-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox:target {
+    display: flex;
+}
+
+.booking-form {
+
+    table-layout: fixed;
+  max-width:600px;
+  margin:auto;
+}
+
+.roster-active {
+  background-color:lightgreen
+}
+
+.nav-more { /* Font size for this element is handled here to allow for responsive text size */
+  font-size:small; 
+}
+
+.privacy-policy {
+  margin-left:auto; margin-right:auto; width:50%; font-size:large;
+}
+
+.services-table {
+  max-width: 1400px; max-height: 350px; margin: 0 auto; overflow-y: auto; border-radius: 8px;
+}
+
+.date-time {
+  width:80%;
+}
+
+.index-main {
+  flex-direction:column;
+  overflow-wrap: break-word;
+}
+
+.index-media {
+  flex-wrap:wrap; justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .text-box {
+    width:100%;
+  }
+}
+
+/* Adapt navbar text for large screens with lower width */
+@media (max-width:1037px) {
+  .nav-text {
+    font-size: large;
+  }
+
+  .nav-more {
+    font-size:x-small;
+  }
+
+  .privacy-policy {
+    width:100%;
+  }
+
+  .booking-form {
+    width:100%;
+  }
+}
